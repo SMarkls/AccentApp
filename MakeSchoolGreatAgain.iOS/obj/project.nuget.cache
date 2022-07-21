@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "eb2IR1cShNpaCr6h3qrFVuzGzghPzkjT2KOWO/h6/gmLV/pefVzajr4J/Wn19lN32dA80mL/9lZVmoXOdomgPg==",
+  "success": true,
+  "projectFilePath": "D:\\CProjects\\MakeSchoolGreatAgain\\MakeSchoolGreatAgain.iOS\\AccentApp.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\isxak\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\isxak\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\isxak\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}

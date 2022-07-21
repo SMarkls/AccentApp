@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MakeSchoolGreatAgain.WordsPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="LetterButton" TargetType="Button">
+                <Setter Property="Margin" Value="0, 30"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <Grid RowSpacing="15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="0.5,1">
+                <GradientStop Color="#CD853F" Offset="0"/>
+                <GradientStop Color="#ff7f50" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Frame Grid.Row="1">
+            <Label Text="жерлО" TextTransform="Uppercase" x:Name="WordLabel" FontSize="Medium" FontAttributes="Bold" TextColor="Firebrick" HorizontalTextAlignment="Center" HorizontalOptions="Center" VerticalOptions="Center" VerticalTextAlignment="Center" FontFamily="Arial"/>
+        </Frame>
+        <ScrollView Orientation="Horizontal" Grid.Row="3" HorizontalOptions="Center" >
+            <StackLayout Orientation="Horizontal" x:Name="ButtonsStack" HorizontalOptions="CenterAndExpand" Padding="5">
+
+            </StackLayout>
+        </ScrollView>
+        <Label x:Name="CountLabel" Grid.Row="4" Text="Ваш счёт: 0" Margin="10, 0, 0, 0" HorizontalTextAlignment="Start"/>
+        <Label x:Name="BestLabel" Grid.Row="4" Text="Лучший счёт: 0" Margin="0, 0, 10, 0" HorizontalTextAlignment="End"/>
+    </Grid>
+</ContentPage>
+

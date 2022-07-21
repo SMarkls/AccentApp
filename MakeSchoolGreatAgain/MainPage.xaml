@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MakeSchoolGreatAgain.MainPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="ButtonMainMenuStyle" TargetType="Button">
+                <Setter Property="TextColor" Value="#CD5C5C"/>
+                <Setter Property="BorderColor" Value="#B8860B"/>
+                <Setter Property="CornerRadius" Value="50"/>
+                <Setter Property="BorderWidth" Value="5"/>
+                <Setter Property="BackgroundColor" Value="#DEB887"/>
+                <Setter Property="Margin" Value="10, 5"/>
+                <Setter Property="FontSize" Value="Medium"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <Grid RowSpacing="15">
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0,0" EndPoint="0.5,1">
+                <GradientStop Color="#CD853F" Offset="0"/>
+                <GradientStop Color="#ff7f50" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/> 
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Frame Margin="15, 20" BackgroundColor="#FBCEB1" CornerRadius="50" Padding="0">
+            <ContentView HorizontalOptions="Center" VerticalOptions="Center">
+                <Label Text="УДАРЕНИЯ ЕГЭ!" FontSize="Large" FontFamily="Impact" FontAttributes="Bold"/>
+            </ContentView>
+        </Frame>
+        <!--<Button Text="Начать" Clicked="StartButtonClicked"/>
+        <Button Text="Инфо о разработчике" Clicked="DevButtonClicked"/>
+        <Button Text="Выйти" Clicked="CloseButtonClicked"/>-->
+        <Button Grid.Row="2" Text="Начать" Clicked="StartButtonClicked" Style="{StaticResource ButtonMainMenuStyle}"/>
+        <Button Grid.Row="3" Text="Инфо о разработчике" Clicked="DevButtonClicked" Style="{StaticResource ButtonMainMenuStyle}"/>
+        <Button Grid.Row="4" Text="Выйти" Clicked="CloseButtonClicked" Style="{StaticResource ButtonMainMenuStyle}"/>
+    </Grid>
+
+</ContentPage>
