@@ -1,11 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MakeSchoolGreatAgain.WordsPage">
+             x:Class="MakeSchoolGreatAgain.WordsPage"
+             Title="Ударения">
     <ContentPage.Resources>
         <ResourceDictionary>
             <Style x:Key="LetterButton" TargetType="Button">
-                <Setter Property="Margin" Value="0, 30"/>
+                <Setter Property="Margin" Value="0, 35"/>
+                <Setter Property="TextColor" Value="#60B9CE"/>
+                <Setter Property="FontSize" Value="Medium"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="CornerRadius" Value="15"/>
+                <Setter Property="BackgroundColor" Value="#FFA990"/>
+                <Setter Property="BorderColor" Value="#CD853F"/>
+                <Setter Property="BorderWidth" Value="5"/>
+            </Style>
+            <Style x:Key="CountLabels" TargetType="Label">
+                <Setter Property="TextColor" Value="Cyan"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+                <Setter Property="FontSize" Value="Subtitle"/>
+                <Setter Property="Grid.Row" Value="4"/>
             </Style>
         </ResourceDictionary>
     </ContentPage.Resources>
@@ -24,15 +38,15 @@
             </LinearGradientBrush>
         </Grid.Background>
         <Frame Grid.Row="1">
-            <Label Text="жерлО" TextTransform="Uppercase" x:Name="WordLabel" FontSize="Medium" FontAttributes="Bold" TextColor="Firebrick" HorizontalTextAlignment="Center" HorizontalOptions="Center" VerticalOptions="Center" VerticalTextAlignment="Center" FontFamily="Arial"/>
+            <Label Text="" TextTransform="Uppercase" x:Name="WordLabel" FontSize="Medium" FontAttributes="Bold" TextColor="Firebrick" HorizontalTextAlignment="Center" HorizontalOptions="Center" VerticalOptions="Center" VerticalTextAlignment="Center" FontFamily="Arial"/>
         </Frame>
         <ScrollView Orientation="Horizontal" Grid.Row="3" HorizontalOptions="Center" >
-            <StackLayout Orientation="Horizontal" x:Name="ButtonsStack" HorizontalOptions="CenterAndExpand" Padding="5">
+            <StackLayout Orientation="Horizontal" x:Name="ButtonsStack" HorizontalOptions="CenterAndExpand" Padding="5" Spacing="12">
 
             </StackLayout>
         </ScrollView>
-        <Label x:Name="CountLabel" Grid.Row="4" Text="Ваш счёт: 0" Margin="10, 0, 0, 0" HorizontalTextAlignment="Start"/>
-        <Label x:Name="BestLabel" Grid.Row="4" Text="Лучший счёт: 0" Margin="0, 0, 10, 0" HorizontalTextAlignment="End"/>
+        <Label Style="{StaticResource CountLabels}" x:Name="CountLabel" Text="Ваш счёт: 0" Margin="10, 0, 0, 0" HorizontalTextAlignment="Start"/>
+        <Label Style="{StaticResource CountLabels}" x:Name="BestLabel" Text="Лучший счёт: 0" Margin="0, 0, 10, 0" HorizontalTextAlignment="End"/>
     </Grid>
 </ContentPage>
 

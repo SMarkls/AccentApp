@@ -19,12 +19,12 @@ namespace MakeSchoolGreatAgain
         }
         private async void StartButtonClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new WordsPage());
+            await Navigation.PushAsync(new WordsPage()); 
         }
 
         private void DevButtonClicked(object sender, EventArgs e)
         {
-
+            
         }
 
         private void CloseButtonClicked(object sender, EventArgs e)

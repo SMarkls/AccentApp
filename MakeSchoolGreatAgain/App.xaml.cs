@@ -33,8 +33,6 @@ namespace MakeSchoolGreatAgain
         /// </summary>
         private void CheckForDict()
         {
-            if (Directory.GetFiles(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData)).Contains("Dictionary.txt"))
-                return;
             new DictionaryCreator(); // Constructor of DictionaryCreator creates a file
         }
     }

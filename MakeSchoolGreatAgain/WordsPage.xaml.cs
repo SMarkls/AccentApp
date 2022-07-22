@@ -10,16 +10,29 @@ namespace MakeSchoolGreatAgain
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class WordsPage : ContentPage
     {
+        int firstBestCount = 0;
+        static int bestCount = 0;
         static int count = 0;
         static string vowels = "аеёиоуыэюя";
         static string upVowels = "АЕЁИОУЫЭЮЯ";
         static StackLayout stack;
+
         public WordsPage()
         {
             InitializeComponent();
+            try
+            {
+                bestCount = Convert.ToInt32(File.ReadAllText(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Record.txt")));
+            }
+            catch (Exception ex)
+            {
+
+            }
+            firstBestCount = bestCount;
+            EditValues();
             stack = this.FindByName<StackLayout>("ButtonsStack");
-            InitWord();
-            InitButtons();
+            if (WordLabel.Text == "")
+                InitWord();
         }
         private void InitWord()
         {
@@ -35,6 +48,7 @@ namespace MakeSchoolGreatAgain
             }
             str = str.Split(':')[0];
             WordLabel.Text = str;
+            InitButtons();
             //catch (Exception ex)
             //{
             //    DisplayAlert("Уведомление", ex.ToString(), "ОK");
@@ -60,15 +74,24 @@ namespace MakeSchoolGreatAgain
             {
                 count++;
                 InitWord();
-                InitButtons();
-                EditValues();
+                if (count > bestCount) bestCount = count;
             }
+            else count = 0;
+            EditValues();
         }
 
         private void EditValues()
         {
-            // Todo: Check for best count
+            BestLabel.Text = $"Лучший счёт: {bestCount}";
             CountLabel.Text = $"Ваш счёт: {count}";
+        }
+
+        protected override void OnDisappearing()
+        {
+            if (bestCount > firstBestCount)
+                using (StreamWriter stream = new StreamWriter(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Record.txt"), false))
+                    stream.Write(bestCount.ToString());
+                base.OnDisappearing();
         }
     }
 }

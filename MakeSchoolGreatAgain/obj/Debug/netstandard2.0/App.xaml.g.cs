@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("MakeSchoolGreatAgain.App.xaml", "App.xaml", typeof(global::MakeSchoolGreatAgain.App))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("AccentApp.App.xaml", "App.xaml", typeof(global::MakeSchoolGreatAgain.App))]
 
 namespace MakeSchoolGreatAgain {
     

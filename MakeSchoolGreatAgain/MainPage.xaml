@@ -1,7 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MakeSchoolGreatAgain.MainPage">
+             x:Class="MakeSchoolGreatAgain.MainPage"
+             Title="Главная"
+             BackgroundColor="Red">
     <ContentPage.Resources>
         <ResourceDictionary>
             <Style x:Key="ButtonMainMenuStyle" TargetType="Button">
@@ -36,9 +38,6 @@
                 <Label Text="УДАРЕНИЯ ЕГЭ!" FontSize="Large" FontFamily="Impact" FontAttributes="Bold"/>
             </ContentView>
         </Frame>
-        <!--<Button Text="Начать" Clicked="StartButtonClicked"/>
-        <Button Text="Инфо о разработчике" Clicked="DevButtonClicked"/>
-        <Button Text="Выйти" Clicked="CloseButtonClicked"/>-->
         <Button Grid.Row="2" Text="Начать" Clicked="StartButtonClicked" Style="{StaticResource ButtonMainMenuStyle}"/>
         <Button Grid.Row="3" Text="Инфо о разработчике" Clicked="DevButtonClicked" Style="{StaticResource ButtonMainMenuStyle}"/>
         <Button Grid.Row="4" Text="Выйти" Clicked="CloseButtonClicked" Style="{StaticResource ButtonMainMenuStyle}"/>
