@@ -10,11 +10,13 @@ namespace AccentApp
     class DictionaryCreator
     {
         private string words = @"аэропОрты
-    бАнтыбОроду
+    бАнты
+    бОроду
     бухгАлтеров
     вероисповЕдание
     граждАнство
-    дефИсдешевИзна
+    дефИс
+    дешевИзна
     диспансЕр
     договорЁнность
     докумЕнт
@@ -156,6 +158,7 @@ namespace AccentApp
     ободрИть
     ободрИшься
     обострИть
+    оптОвый
     одолжИт
     озлОбить
     оклЕить
@@ -189,6 +192,7 @@ namespace AccentApp
     рвалА
     сверлИшь
     сверлИт
+    слИвовый
     снялА
     создалА
     сорвалА
@@ -204,6 +208,7 @@ namespace AccentApp
     балОванный
     включЁн
     довезЁнный
+    доЯр
     зАгнутый
     зАнятый
     занятА
@@ -216,6 +221,7 @@ namespace AccentApp
     кормЯщий
     кровоточАщий
     молЯщий
+    мозаИчный
     нажИвший
     нАжитый
     нажитА
@@ -240,7 +246,9 @@ namespace AccentApp
     прИнятый
     приручЁнный
     прожИвший
-    снЯтый-снятА
+    прожОрлива
+    снЯтый
+    снятА
     сОгнутый
     балУясь
     закУпорив
@@ -263,7 +271,13 @@ namespace AccentApp
     красИвее
     прил.и
     надОлго
-    ненадОлго";
+    ненадОлго
+    мусоропровОд
+    газопровОд
+    нефтепровОд
+    водопровОд
+    диалОг
+    монолОг";
         public DictionaryCreator()
         {
             using (var stream = File.CreateText(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Dictionary.txt")))
