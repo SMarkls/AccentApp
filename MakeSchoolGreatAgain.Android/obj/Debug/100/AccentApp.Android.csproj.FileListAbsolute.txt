@@ -628,3 +628,4 @@ D:\CProjects\MakeSchoolGreatAgain\MakeSchoolGreatAgain.Android\obj\Debug\100\sta
 D:\CProjects\MakeSchoolGreatAgain\MakeSchoolGreatAgain.Android\obj\Debug\100\stamp\_GenerateJavaStubs.stamp
 D:\CProjects\MakeSchoolGreatAgain\MakeSchoolGreatAgain.Android\obj\Debug\100\stamp\_GeneratePackageManagerJava.stamp
 D:\CProjects\MakeSchoolGreatAgain\MakeSchoolGreatAgain.Android\obj\Debug\100\stamp\_ResolveLibraryProjectImports.stamp
+D:\CProjects\MakeSchoolGreatAgain\MakeSchoolGreatAgain.Android\obj\Debug\100\android\src\crc64f532167a82dd286c\MainActivity.java

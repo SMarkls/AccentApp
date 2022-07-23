@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Xamarin.Forms;
 
-namespace MakeSchoolGreatAgain
+namespace AccentApp
 {
     public partial class MainPage : ContentPage
     {
@@ -22,9 +22,9 @@ namespace MakeSchoolGreatAgain
             await Navigation.PushAsync(new WordsPage()); 
         }
 
-        private void DevButtonClicked(object sender, EventArgs e)
+        private async void DevButtonClicked(object sender, EventArgs e)
         {
-            
+            await Navigation.PushAsync(new DeveloperPage());
         }
 
         private void CloseButtonClicked(object sender, EventArgs e)

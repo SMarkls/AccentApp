@@ -5,7 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
-namespace MakeSchoolGreatAgain.iOS
+namespace AccentApp.iOS
 {
     public class Application
     {

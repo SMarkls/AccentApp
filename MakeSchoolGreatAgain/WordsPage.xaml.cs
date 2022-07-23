@@ -5,7 +5,7 @@ using System.Linq;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace MakeSchoolGreatAgain
+namespace AccentApp
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class WordsPage : ContentPage

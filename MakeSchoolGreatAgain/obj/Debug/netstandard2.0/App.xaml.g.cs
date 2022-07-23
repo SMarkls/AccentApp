@@ -8,9 +8,9 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("AccentApp.App.xaml", "App.xaml", typeof(global::MakeSchoolGreatAgain.App))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("AccentApp.App.xaml", "App.xaml", typeof(global::AccentApp.App))]
 
-namespace MakeSchoolGreatAgain {
+namespace AccentApp {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("App.xaml")]

@@ -2,7 +2,7 @@
 using System.IO;
 using System.Text;
 
-namespace MakeSchoolGreatAgain
+namespace AccentApp
 {
     /// <summary>
     /// Class creates file with words
