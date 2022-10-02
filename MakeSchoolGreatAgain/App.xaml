@@ -3,6 +3,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AccentApp.App">
     <Application.Resources>
-
+        <ResourceDictionary>
+            <Style ApplyToDerivedTypes="True" TargetType="NavigationPage">
+                <Setter Property="BarBackgroundColor" Value="#DEB887"/>
+                <Setter Property="BarTextColor" Value="#CD5C5C"/>
+                <Setter Property="BackgroundColor" Value="Black"/>
+                <Setter Property="Shell.BackgroundColor" Value="Aqua"/>
+            </Style>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
